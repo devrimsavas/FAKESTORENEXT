@@ -2,7 +2,7 @@ const Home = () => {
   return (
     <main className="container mx-auto p-4 space-y-12 mt-20">
       <section className="text-center">
-        <h1 className="text-5xl font-bold mb-4 animate__animated animate__bounce">Welcome to  Zemo Fake Company!</h1>
+        <h1 className="text-5xl font-bold mb-4 animate__animated animate__bounce">Welcome to  Gemo Fake Company!</h1>
         <p className="text-xl text-gray-600">
           Your one-stop shop for affordable gadgets and lifestyle products.
         </p>
@@ -26,7 +26,7 @@ const Home = () => {
         </div>
         <div className="p-6 border rounded-xl text-center">
           <h3 className="text-2xl font-bold mb-2">Easy Returns</h3>
-          <p>Not satisfied? Return it within 30 days, no questions asked.</p>
+          <p>Not satisfied? Return it within 30 days, no questions asked.( give us money and never ask anything)</p>
         </div>
       </section>
     </main>

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
+import PageFooter from "@/components/PageFooter";
 import "./globals.css";
-import  {inter, dancingScript,roboto} from "../fonts"
-
+import { inter, dancingScript, roboto } from "../fonts";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,12 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
-        <div className="h-20 bg-background-light">
-          <PageHeader />
-        </div>
-
-        {children}
+      <body className={`${roboto.className} min-h-screen flex flex-col`}>
+        <PageHeader />
+        <main className="flex-1">{children}</main>{" "}
+        {/* Flex-grow main content */}
+        <PageFooter />
       </body>
     </html>
   );
